@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Святослав Новиков](https://up.htmlacademy.ru/htmlcss/19/user/552847).
-* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Наставник: [Екатерина Комнатная](https://up.htmlacademy.ru/htmlcss/19/user/215761).
 
 ---
 
