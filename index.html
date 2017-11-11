@@ -12,7 +12,7 @@
 	  		<header class="main-header">
 	  			<nav class="main-navigation">
 	  				<a class="main-header-logo">
-	  					<img src="img/logo-sedona.png" width="138" height="70" alt="Sedona">
+	  					<img src="img/logo-sedona.png" width="138" height="70" alt="Логотип Седона">
 	  				</a>
 	  				<ul class="site-navigation">
 	  					<li><a href="#">Информация</a></li>
@@ -89,21 +89,35 @@
 	  				<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	  				<a class="button hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
 	  				<div class="modal modal-hotel-search">
-			  			
-
-			  			<!-- Здесь будет форма -->
-
-			  			
+			  			<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+          					<p class="hotel-search-form-item">
+          						<label for="arrival-date">Дата заезда:</label>
+								<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required>
+							</p>
+							<p class="hotel-search-form-item">
+								<label for="leaving-date">Дата выезда:</label>
+								<input type="text" name="leaving-date" id="leaving-date" placeholder="4 июля 2017" required>
+							</p>
+							<p class="hotel-search-form-item">
+								<label for="adult-count">Взрослые:</label>
+								<button class="button-menus" type="button">Уменьшить</button>
+								<input type="number" name="adult-count" id="adult-count" step="1" placeholder="2" required>
+								<button class="button-plus" type="button">Увеличить</button>
+								<label for="child-count">Дети:</label>
+								<button class="button-menus" type="button">Уменьшить</button>
+								<input type="number" name="child-count" id="child-count" step="1" placeholder="0" required>
+								<button class="button-plus" type="button">Увеличить</button>
+							</p>
+							<button class="button" type="submit">Найти</button>
+        				</form>
 			  		</div>
 	  			</section>
 
 	  			<section class="map">
 	  				<h2 class="visually-hidden">Карта</h2>
-
-
-	  				<!-- Карта будет тут-->
-
-
+	  				<p>
+						<img src="img/map.jpg" width="780" height="460" alt="Расположение города Седона на карте">
+					</p>
 	  			</section>
 	  		</main>
 
