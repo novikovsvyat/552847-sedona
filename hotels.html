@@ -12,7 +12,7 @@
 	  		<header class="main-header">
 	  			<nav class="main-navigation">
 	  				<a class="main-header-logo" href="index.html">
-	  					<img src="img/logo-sedona.png" width="138" height="70" alt="Sedona">
+	  					<img src="img/logo-sedona.png" width="138" height="70" alt="Логотип Sedona">
 	  				</a>
 	  				<ul class="site-navigation">
 	  					<li><a href="#">Информация</a></li>
@@ -24,28 +24,76 @@
 	  		</header>
 
 	  		<main class="content-container">
-	  			<h1 class="visually-hidden">Гостиницы Седоны</h1>
-	  			<section class="hotels-search-setting">
-	  				<h2 class="visually-hidden">Настройки поиска</h2>
+	  			<h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
+	  			<section class="hotels-filter-setting">
+	  				<h2 class="visually-hidden">Фильтр каталога</h2>
+
+	  				<form class="hotels-filter-form" action="https://echo.htmlacademy.ru" method="get">
+						<fieldset>
+							<legend>Инфраструктура:</legend>
+							<ul>
+								<li class="filter-option">
+									<input class="filter-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+									<label for="swimming-pool">Бассейн</label>
+								</li>
+								<li class="filter-option">
+									<input class="filter-input-checkbox" type="checkbox" name="parking-place" id="parking-place">
+									<label for="parking-place">Парковка</label>
+								</li>
+								<li class="filter-option">
+									<input class="filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+									<label for="wi-fi">Wi-Fi</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Тип жилья:</legend>
+							<ul>
+								<li class="filter-option">
+									<input class="filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+									<label for="hotel">Гостиница</label>
+								</li>
+								<li class="filter-option">
+									<input class="filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+									<label for="motel">Мотель</label>
+								</li>
+								<li class="filter-option">
+									<input class="filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+									<label for="apartments">Апартаменты</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Стоимость в сутки (Р.):</legend>
+							<p>
+								<label for="min-price">От</label>
+								<input class="filter-input-price" type="number" name="min-price" id="min-price" value="0">
+								<label for="max-price">До</label>
+								<input class="filter-input-price" type="number" name="max-price" id="max-price" value="3000">
+							</p>
+
+							<!-- Тут будет двойной ползунок-->
+
+						</fieldset>
 
 
-	  				<!-- Здесь будет форма -->
-
+						<button class="button filter-button" type="submit">Показать</button>
+        			</form>
 
 	  			</section>
 
-	  			<section class="hotels-search-results">
-	  				<h2 class="visually-hidden">Результаты поиска</h2>
-	  				<div class="seacrh-result-info">
+	  			<section class="hotels-filter-results">
+	  				<h2 class="visually-hidden">Результаты фильтрации</h2>
+	  				<div class="filter-result-info">
 	  					<p>Найдено: 3</p>
 	  					<p>Сортировка:</p>
 						<a class="sorting-type current-sorting-type" href="#">По цене</a>
   						<a class="sorting-type" href="#">По типу</a>
   						<a class="sorting-type" href="#">По рейтингу</a>
-  						<a class="sorting-direction" href="#"></a>
-  						<a class="sortign-direction current-sorting-direction" href="#"></a>
+  						<a class="sorting-direction" href="#">По возрастанию</a>
+  						<a class="sortign-direction current-sorting-direction" href="#">По убыванию</a>
 	  				</div>
-	  				<ul class="seacrh-result-list">
+	  				<ul class="filter-result-list">
 	  					<li>
 	  						<p class="hotel-image">
 	  							<img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
