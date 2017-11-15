@@ -527,11 +527,16 @@ a.active-sorting-direction {
 a.filter-item-title {
     color: #000000;
     font-size: 21px;
+    text-decoration: none;
 }
 
 a.filter-item-title:hover,
 a.filter-item-title:focus {
-    text-decoration: underline;
+    color: #81b3d2;
+}
+
+a.filter-item-title:active {
+    color: rgba(0,0,0,0.3);
 }
 
 .more-info-button,
