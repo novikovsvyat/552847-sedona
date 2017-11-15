@@ -524,12 +524,13 @@ a.active-sorting-direction {
     border-top: 1px solid #e5e5e5; 
 }
 
-.filter-item-title {
+a.filter-item-title {
+    color: #000000;
     font-size: 21px;
 }
 
-.filter-item-title:hover,
-.filter-item-title:focus {
+a.filter-item-title:hover,
+a.filter-item-title:focus {
     text-decoration: underline;
 }
 
