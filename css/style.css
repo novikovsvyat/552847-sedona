@@ -13,34 +13,6 @@ html {
 
 
 
-/* Прячем доступно ----------------- */
-/*
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}*/
-
-
-
-
-/* Обертка-центровщик -------------- */
-/* --------------------------------- */
-.container { /*--------------------- */
-/**/width: 1200px; /*--------------- Это временный костыль, просто для вида */ 
-/**/margin: 0 auto; /*-------------- */
-/**/background-color: #ffffff; /* -- */
-} /* ------------------------------- */
-/* --------------------------------- */
-
-
-
-
 /* Общие стили --------------------- */
 
 body {
@@ -64,15 +36,37 @@ a {
 
 
 
-/* Навигация ----------------------- */
-.main-header {
-    background-color: #ffffff;
+/* Прячем доступно ----------------- */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.main-navigation {
-    font-size: 14px;
-    line-height: 26px;
-    color: #000000;
+
+
+
+/* Обертка-центровщик -------------- */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+} 
+
+
+
+
+/* Хедер, Навигация ---------------- */
+
+.main-header {
+    background-color: #ffffff;
 }
 
 .site-navigation {
@@ -139,16 +133,11 @@ a.active-page:focus {
 
 .section-description-header {
     font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
     text-align: center;
-    color: #000000;
 }
 
 .section-description-body {
-    font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
     text-align: center;
     color: #333333;
 }
@@ -178,14 +167,12 @@ a.active-page:focus {
 .feature-item-with-image h3,
 .more-feature-item h3 {
     font-size: 21px;
-    font-weight: 700;
     line-height: 21px;
 }
 
 .feature-item p,
 .feature-item-with-image p,
 .more-feature-item p {
-    font-size: 14px;
     font-weight: 400;
     line-height: 21px;
 }
@@ -202,13 +189,10 @@ a.active-page:focus {
 
 .section-description-big-header {
     font-size: 30px;
-    font-weight: 700;
     line-height: 36px;
-    color: #000000;
 }
 
 .section-description-big-body {
-    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #333333;
@@ -216,8 +200,6 @@ a.active-page:focus {
 
 .hotel-search-button {
     font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
     color: #ffffff;
 
     background-color: #766357;
@@ -242,6 +224,7 @@ a.active-page:focus {
 .hotel-find-button {
     padding: 0;
 
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -267,6 +250,7 @@ a.active-page:focus {
 
 .hotel-search-form label,
 .hotel-search-form input {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
@@ -283,12 +267,13 @@ a.active-page:focus {
     background-color: #ebebeb;
     border: 2px solid #ebebeb;
 }
+
 .hotel-search-form input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
 }
 
-/* Костыль для черного placeholder - */
+/* Явная стилизация placeholder ---- */
 .hotel-search-form input::-webkit-input-placeholder {
     color: #000000;
     opacity: 1;
@@ -312,12 +297,14 @@ a.active-page:focus {
 .hotel-search-form input:placeholder-shown {
     color: #000000;
     opacity: 1;
-}/* -------------------------------- */
+}
+/* -------------------------------- */
 
 
 
 
 /* Карта ------------------ */
+
 .map {
     height: 473px;
     width: 100%;
@@ -331,14 +318,13 @@ a.active-page:focus {
 
 
 /* Футер ------------------ */
+
 .main-footer {
     background-color: #ffffff;
 }
 
 .footer-hashtag a {
     font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
     color: #000000;
 }
 
@@ -372,16 +358,10 @@ a.active-page:focus {
 }
 
 .footer-copyright {
-    font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
-    color: #000000;
 }
 
 .footer-copyright a {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
     color: #000000;
 }
 
@@ -408,7 +388,6 @@ a.active-page:focus {
 
 .hotels-filter-form legend {
     font-size: 16px;
-    font-weight: 700;
     line-height: 21px;
     color: #ffffff;
 }
@@ -417,7 +396,9 @@ a.active-page:focus {
     list-style: none;
 }
 
+.hotels-filter-form input,
 .hotels-filter-form label {
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -429,15 +410,13 @@ a.active-page:focus {
 }
 
 .hotels-filter-form label:disabled {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
     color: #6a6a6a;
 }
 
 .filter-button {
     padding: 0;
 
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -455,26 +434,16 @@ a.active-page:focus {
     color: #000000;
 
     background-color: #ffffff;
-
-    border: 2px solid #ffffff;
 }
-
-
 
 .filter-price-container {
     border: 2px solid #ffffff;
 }
 
 .filter-price-container input {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    color: #ffffff;
-
     background-color: transparent;
 
     border: none;
-
 }
 
 input.filter-input-price {
@@ -485,22 +454,18 @@ input.filter-input-price {
 
 
 /* Результаты фильтрации ----------- */
-.filter-result-info {
 
-}
 
 .filter-result-count {
     font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-    color: #000000;
 }
 
-.filter-result-sorting {
+.filter-result-sorting,
+.sorting-direction-list a,
+.sorting-type-list a {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    color: #000000;
 }
 
 .sorting-type-list,
@@ -509,9 +474,6 @@ input.filter-input-price {
 }
 
 .sorting-type-list a {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
     color: rgba(0,0,0,0.3);
     border-bottom: 1px dotted #81b3d2;
 }
@@ -533,9 +495,6 @@ a.active-sorting-type {
 }
 
 .sorting-direction-list a {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
     color: #cacaca;
 }
 
@@ -556,6 +515,7 @@ a.active-sorting-direction {
 
 
 /* Список отелей ------------------- */
+
 .filter-result-list {
     list-style: none;
 }
@@ -564,13 +524,10 @@ a.active-sorting-direction {
     border-top: 1px solid #e5e5e5; 
 }
 
-
 .filter-item-title {
     font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-    color: #000000;
 }
+
 .filter-item-title:hover,
 .filter-item-title:focus {
     text-decoration: underline;
@@ -578,8 +535,6 @@ a.active-sorting-direction {
 
 .more-info-button,
 .reservation-button {
-    font-size: 14px;
-    font-weight: 700;
     line-height: 21px;
     color: #ffffff;
 }
@@ -617,14 +572,8 @@ a.active-sorting-direction {
 .hotel-price,
 .hotel-stars,
 .hotel-rating {
-    font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    color: #000000;
-}
-
-.hotel-stars {
-
 }
 
 .hotel-rating {
