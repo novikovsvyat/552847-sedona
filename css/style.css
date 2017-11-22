@@ -331,10 +331,6 @@ a.active-page:focus {
     color: #000000;
 }
 
-.footer-hashtag a:hover {
-    text-decoration: underline;
-}
-
 .footer-social {
     text-align: center;
     list-style: none;
@@ -625,7 +621,8 @@ a.filter-item-title:active {
 
 .site-navigation {
     margin: 0;
-    padding: 0;
+    padding: 0 6%;
+
 
     display: flex;
     flex-direction: row;
@@ -633,32 +630,23 @@ a.filter-item-title:active {
 }
 
 .site-navigation li {
-    margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 15px;
 
-    min-width: 100px;
+    width: 20%;
 }
 
-.site-navigation li:nth-child(1) {
-    margin-left: 72px;
-
-    text-align: left;
-}
-
+.site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2) {
-    margin-left: -50px;
-
     text-align: left;
 }
 
-.site-navigation li:nth-child(3) {
-    margin-right: -50px;
-
+.site-navigation li:nth-child(3), 
+.site-navigation li:nth-child(4) {
     text-align: right;
 }
 
-.site-navigation li:nth-child(4) {
+ {
     margin-right: 72px;
 
     text-align: right;
@@ -709,7 +697,7 @@ a.filter-item-title:active {
 
 .feature-item,
 .feature-item-with-image {
-    width: 400px;
+    width: 33.33%;
 
     /*Временно*/
     min-height: 256px;
@@ -746,7 +734,7 @@ a.filter-item-title:active {
 }
 
 .more-feature-item {
-    width: 400px;
+    width: 33.33%;
 
     /*Временно*/
     min-height: 330px;
