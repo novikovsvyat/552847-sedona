@@ -380,6 +380,8 @@ input[type="checkbox"].visually-hidden {
     width: 33.33%;
     padding-top: 48px;
     padding-bottom: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
 
     color: #ffffff;
 
@@ -420,11 +422,15 @@ input[type="checkbox"].visually-hidden {
 .feature-item h3,
 .feature-item-with-image h3,
 .more-features-item h3 {
-    width: 150px;
+    width: 200px;
     margin: 0 auto;
 
     font-size: 21px;
     line-height: 21px;
+}
+
+.feature-item h3 {
+    width: 155px;
 }
 
 .feature-item p,
@@ -432,8 +438,6 @@ input[type="checkbox"].visually-hidden {
 .more-features-item p {
     margin-top: 22px;
     margin-bottom: 0px;
-    margin-left: 12%;
-    margin-right: 12%;
 
     font-weight: 400;
     line-height: 21px;
@@ -453,6 +457,7 @@ input[type="checkbox"].visually-hidden {
 .more-features-item {
     width: 33.33%;
     min-height: 330px;
+    padding: 0 4%;
 }
 
 .more-features-item:nth-child(1)::before,
@@ -910,11 +915,11 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-input-checkbox:disabled + label::before {
-    opacity: 0.3;
+    background-image: url("../img/checkbox-off-disabled.svg");
 }
 
 .filter-input-checkbox:checked:disabled + label::before {
-    opacity: 0.3;
+    background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .right-fildset-wrapper {
