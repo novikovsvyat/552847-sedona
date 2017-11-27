@@ -937,6 +937,7 @@ input[type="checkbox"].visually-hidden {
 .filter-price-container {
     position: relative;
 
+    display: flex;
     height: 36px;
     margin-top: 9px;
     margin-bottom: 20px;
@@ -962,9 +963,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-label-price {
-    display: inline-block;
-    vertical-align: middle;
-    width: 49%;
+    width: 50%;
     
     text-align: right;
 }
