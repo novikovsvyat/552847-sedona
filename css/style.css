@@ -851,7 +851,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotels-filter-form > fieldset {
-    width: 24%;
+    min-width: 205px;
+    margin-right: 5%;
+}
+
+.hotels-filter-form fieldset:nth-child(2) {
+    margin-right: auto;
 }
 
 .hotels-filter-form legend {
@@ -925,6 +930,7 @@ input[type="checkbox"].visually-hidden {
 
 .right-fildset-wrapper {
     width: 30%;
+    min-width: 220px;
     margin-left: auto;
 }
 
@@ -1034,7 +1040,7 @@ input[type="checkbox"].visually-hidden {
 .filter-button {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 34px 5px;
 
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
