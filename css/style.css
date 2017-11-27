@@ -995,21 +995,31 @@ input[type="checkbox"].visually-hidden {
     background-color: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    box-shadow: 0 1px 0px 1px rgba(171, 171, 171, 0.3);
 
     cursor: pointer;
 }
 
 .range-toggle:hover {
-    background: #1c4f80;
+    width: 22px;
+    height: 22px;
+    border: 9px solid #ffffff;
+    top: -10px;
 }
 
 .range-toggle-min {
-    left: 0;
+    left: 0px;
+}
+.range-toggle-min:hover {
+    left: -1px;
 }
 
 .range-toggle-max {
-    left: 80%;
+    left: 253px;
+}
+
+.range-toggle-max:hover {
+    left: 252px;
 }
 /* =========================================== */
 
