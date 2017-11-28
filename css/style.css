@@ -186,7 +186,7 @@ input[type="checkbox"].visually-hidden {
 .footer-copyright {
     width: 33.33%;
     margin: 0;
-    padding: 0;
+    padding: 30px 3%;
     
     text-align: center;
 }
@@ -198,6 +198,7 @@ input[type="checkbox"].visually-hidden {
 
 .footer-social {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     list-style: none;
@@ -206,13 +207,9 @@ input[type="checkbox"].visually-hidden {
 .footer-social-item {
     width: 46px;
     height: 48px;
-    margin-right: 6px; 
+    margin: 3px;
 
     background-color: #81b3d2;
-}
-
-.footer-social-item:last-child {
-    margin-right: 0px; 
 }
 
 .social-button {
@@ -496,6 +493,8 @@ input[type="checkbox"].visually-hidden {
 /* Предложения ------------------------------- */
 
 .offers {
+    position: relative;
+
     padding-top: 52px;
     
     text-align: center;
@@ -582,16 +581,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-search-form-item {
+    position: relative;
+
     display: flex;
+    align-items: center;
     margin: 0;
     margin-bottom: 29px;
 }
 
 .hotel-search-form label,
 .hotel-search-form input {
-    height: 38px;
-
-    font-family: "PT Sans", "Arial", sans-serif;
+    font: inherit;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
@@ -602,7 +602,9 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-search-form input {
     width: 346px;
+    height: 38px;
     padding-left: 11px;
+    padding-right: 35px;
     
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
@@ -619,6 +621,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-search-form label {
+    min-height: 38px;
     width: 112px;
     padding-top: 7px;
 
@@ -638,12 +641,14 @@ input[type="checkbox"].visually-hidden {
 .hotel-search-form input[name="adult-count"] {
     width: 38px;
     padding-left: 14px;
+    padding-right: 0px;
 }
 
 .button-menus,
 .button-plus {
     position: relative;
     width: 38px;
+    height: 38px;
     
     background-color: #f2f2f2;
     border: none;
@@ -709,49 +714,38 @@ input[type="checkbox"].visually-hidden {
 
 .button-calendar {
     position: absolute;
+    right: 7px;
 
     width: 25px;
     height: 25px;
+    margin: 0;
     padding: 0;
     
     background-color: transparent;
+    background-image: url(../img/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: center 1px;
     border: none;
 
     cursor: pointer;
 }
 
-.button-calendar path {
-    fill: #cacaca;
+.button-calendar:hover,
+.button-calendar:focus {
+    background-image: url(../img/calendar-hover.svg);
 }
 
-.button-calendar:hover path,
-.button-calendar:focus path {
-    fill: #000000;
-}
-
-.button-calendar:active path {
-    fill: #81b3d2;
-}
-
-.hotel-search-form-item:nth-child(1) .button-calendar {
-    right: 62px;
-    top: 63px;
-}
-
-.hotel-search-form-item:nth-child(2) .button-calendar {
-    right: 62px;
-    top: 130px;
+.button-calendar:active {
+    background-image: url(../img/calendar-active.svg);
 }
 
 .hotel-find-button {
     display: block;
     min-height: 58px;
-
-    padding: 0;
     margin-top: auto;
-    padding-top: 1px;
+    padding: 16px 15px 15px;
 
-    font-family: "PT Sans", "Arial", sans-serif;
+    font: inherit;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -870,7 +864,7 @@ input[type="checkbox"].visually-hidden {
 
 .hotels-filter-form input,
 .hotels-filter-form label {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font: inherit;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -963,13 +957,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-label-price {
-    width: 50%;
+    width: 48%;
+    max-width: 150px;
     
     text-align: right;
 }
 
 .filter-input-price {
-    width: 50%;
+    width: 47%;
+    max-width: 66px;
     height: 32px;
 
     background-color: transparent;
@@ -1041,7 +1037,7 @@ input[type="checkbox"].visually-hidden {
     margin: 0 auto;
     padding: 6px 34px 5px;
 
-    font-family: "PT Sans", "Arial", sans-serif;
+    font: inherit;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
