@@ -526,11 +526,9 @@ input[type="checkbox"].visually-hidden {
 .hotel-search-button {
     display: block;
     width: 568px;
+    min-height: 86px;
     margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 31px;
-    padding-bottom: 29px;
+    padding: 31px 30px 29px;
 
     font-size: 21px;
     text-align: center;
@@ -902,12 +900,17 @@ input[type="checkbox"].visually-hidden {
     top: -4px;
     left: -40px;
 
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 23px;
 
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.filter-input-checkbox:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-input-checkbox:checked + label::before {
