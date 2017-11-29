@@ -364,6 +364,7 @@ input[type="checkbox"].visually-hidden {
 
 .features-list {
 	flex-wrap: wrap;
+	background-color: #eeeeee;
 }
 
 .feature-item,
@@ -376,6 +377,7 @@ input[type="checkbox"].visually-hidden {
 	order: 4;
 
 	width: 33.33%;
+	max-width: 400px;
 	min-height: 256px;
 	padding-top: 48px;
 	padding-bottom: 30px;
@@ -391,7 +393,8 @@ input[type="checkbox"].visually-hidden {
 
 .for-pseudo-feature {
 	display: block;
-	width: 33.33%;
+	width: 33.34%;
+	max-width: 400px;
 	padding-top: 48px;
 	padding-bottom: 30px;
 	padding-left: 4%;
@@ -462,10 +465,15 @@ input[type="checkbox"].visually-hidden {
 	margin-right: 15%;
 }
 
+.more-features-item p {
+	margin-top: 23px;
+}
+
 .more-features {
 	order: 2;
 
 	width: 100%;
+	background-color: #ffffff;
 }
 
 .more-features-item {
