@@ -215,8 +215,6 @@ input[type="checkbox"].visually-hidden {
     width: 46px;
     height: 48px;
     margin: 3px;
-
-    background-color: #81b3d2;
 }
 
 .social-button {
@@ -229,6 +227,8 @@ input[type="checkbox"].visually-hidden {
     color: #ffffff;
 
     background-color: #81b3d2;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .social-button:hover,
@@ -237,13 +237,31 @@ input[type="checkbox"].visually-hidden {
 }
 
 .social-button:active {
-    color: rgba(255, 255, 255, 0.3);
-
     background-color: #5496bd;
 }
 
-.social-button:active path {
-    opacity: 0.3;
+.footer-social-item:nth-child(1) .social-button {
+    background-image: url(../img/twitter.svg);
+}
+
+.footer-social-item:nth-child(2) .social-button {
+    background-image: url(../img/fb-icon.svg);
+}
+
+.footer-social-item:nth-child(3) .social-button {
+    background-image: url(../img/youtube.svg);
+}
+
+.footer-social-item:nth-child(1) .social-button:active {
+    background-image: url(../img/twitter-active.svg);
+}
+
+.footer-social-item:nth-child(2) .social-button:active {
+    background-image: url(../img/fb-icon-active.svg);
+}
+
+.footer-social-item:nth-child(3) .social-button:active {
+    background-image: url(../img/youtube-active.svg);
 }
 
 .footer-copyright {
@@ -915,7 +933,8 @@ input[type="checkbox"].visually-hidden {
     background-position: 0 0;
 }
 
-.filter-input-checkbox:focus + label::before {
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:active + label::before {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
 }
@@ -1082,20 +1101,25 @@ input[type="checkbox"].visually-hidden {
     display: flex;
     align-items: flex-start;
     min-height: 86px;
-    padding-top: 31px;
+    padding-top: 30px;
+    padding-bottom: 28px;
 }
 
 .filter-result-count {
     min-width: 135px; 
     margin: 0;
+    margin-top: 1px;
 
     font-size: 21px;
 }
 
 .filter-result-sorting {
+    display: flex;
+    align-items: center;
+    min-height: 26px;
     margin: 0;
     margin-left: 30px;
-    padding-top: 5px;
+    margin-top: 2px;
 }
 
 .filter-result-sorting,
@@ -1107,11 +1131,13 @@ input[type="checkbox"].visually-hidden {
 
 .sorting-type-list {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0;
     margin-left: 39px;
+    margin-top: 2px;
     padding: 0;
-    padding-top: 1px;
+    
 
     list-style: none;
 }
@@ -1148,10 +1174,11 @@ input[type="checkbox"].visually-hidden {
 .sorting-direction-list {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     min-width: 110px;
     margin: 0;
+    margin-top: 8px;
     padding: 0;
-    padding-top: 8px;
 
     list-style: none;
 }
@@ -1173,7 +1200,7 @@ input[type="checkbox"].visually-hidden {
 
 .sorting-direction-up {
     border-bottom: 10px solid #cacaca;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 .sorting-direction-down {
@@ -1238,6 +1265,11 @@ input[type="checkbox"].visually-hidden {
     padding-bottom: 30px;
 }
 
+.hotel-container img {
+    width: 135px;
+    height: 90px;
+}
+
 .hotel-description-container {
     width: 100%;
     margin-left: 30px;
@@ -1271,6 +1303,7 @@ input[type="checkbox"].visually-hidden {
 .details-descriptions-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 5px;
 }
 
