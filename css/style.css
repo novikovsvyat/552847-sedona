@@ -172,7 +172,7 @@ input[type="checkbox"].visually-hidden {
     display: flex;
     align-items: center;
     min-height: 120px;
-    padding: 30px 0;
+    padding: 33px 0;
 
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -607,7 +607,6 @@ input[type="checkbox"].visually-hidden {
     position: relative;
 
     display: flex;
-    align-items: center;
     margin: 0;
     margin-bottom: 29px;
 }
@@ -620,7 +619,6 @@ input[type="checkbox"].visually-hidden {
     line-height: 26px;
     color: #000000;
     text-transform: uppercase;
-    
 }
 
 .hotel-search-form input {
@@ -782,6 +780,10 @@ input[type="checkbox"].visually-hidden {
     border-radius: 0;
 
     cursor: pointer;
+}
+
+.hotel-find-button span {
+    position: relative;
 }
 
 .hotel-find-button:hover,
@@ -1082,6 +1084,10 @@ input[type="checkbox"].visually-hidden {
     cursor: pointer;
 }
 
+.filter-button span {
+    position: relative;
+}
+
 .filter-button:hover {
     color: #000000;
 
@@ -1115,12 +1121,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-result-sorting {
-    display: flex;
-    align-items: center;
     min-height: 26px;
+    min-width: 75px;
     margin: 0;
     margin-left: 30px;
     margin-top: 2px;
+    padding-top: 4px;
 }
 
 .filter-result-sorting,
@@ -1267,6 +1273,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-container img {
+    flex-shrink: 0;
+
     width: 135px;
     height: 90px;
 }
