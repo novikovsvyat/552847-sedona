@@ -215,6 +215,8 @@ input[type="checkbox"].visually-hidden {
     width: 46px;
     height: 48px;
     margin: 3px;
+
+    background-color: #5496bd;
 }
 
 .social-button {
@@ -237,7 +239,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .social-button:active {
-    background-color: #5496bd;
+    background-color: transparent;
+    opacity: 0.3;
 }
 
 .footer-social-item:nth-child(1) .social-button {
@@ -251,7 +254,7 @@ input[type="checkbox"].visually-hidden {
 .footer-social-item:nth-child(3) .social-button {
     background-image: url(../img/youtube.svg);
 }
-
+/*
 .footer-social-item:nth-child(1) .social-button:active {
     background-image: url(../img/twitter-active.svg);
 }
@@ -262,7 +265,7 @@ input[type="checkbox"].visually-hidden {
 
 .footer-social-item:nth-child(3) .social-button:active {
     background-image: url(../img/youtube-active.svg);
-}
+}*/
 
 .footer-copyright {
     font-weight: 400;
