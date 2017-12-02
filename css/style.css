@@ -328,6 +328,9 @@ input[type="checkbox"].visually-hidden {
 /* Преимущества ------------------------------ */
 
 .features {
+	position: relative;
+	z-index: 1;
+
 	padding-top: 61px;
 
 	background-color: #ffffff;
@@ -518,6 +521,7 @@ input[type="checkbox"].visually-hidden {
 
 .offers {
 	position: relative;
+	z-index: 1;
 
 	padding-top: 52px;
 	
@@ -553,11 +557,21 @@ input[type="checkbox"].visually-hidden {
 	margin: 0 auto;
 	padding: 31px 30px 29px;
 
+	font: inherit;
 	font-size: 21px;
 	text-align: center;
 	color: #ffffff;
+	text-transform: uppercase;
 
 	background-color: #766357;
+
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+.hotel-search-button span {
+	position: relative;
 }
 
 .hotel-search-button:hover,
@@ -577,11 +591,38 @@ input[type="checkbox"].visually-hidden {
 
 /* Модальное окно ---------------------------- */
 
+@keyframes open {
+	0% {
+		transform: translateY(-400px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	20%,
+	40%,
+	60%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateY(-10px);
+	}
+}
+
 .modal-hotel-search {
 	position: absolute;
 	right: 0;
 	left: 0;
-	z-index: 99;
 
 	width: 568px;
 	min-height: 395px;
@@ -590,6 +631,18 @@ input[type="checkbox"].visually-hidden {
 	background-color: #ffffff;
 
 	box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-hide {
+	display: none;
+}
+
+.modal-open {
+	animation: open 0.3s;
+}
+
+.modal-error {
+	animation: shake 0.5s;
 }
 
 .hotel-search-form {
@@ -801,7 +854,7 @@ input[type="checkbox"].visually-hidden {
 }
 .hotel-search-form input::-moz-placeholder {
 	color: #000000;
-	opacity: 1;
+	opacity: 1; 
 }
 .hotel-search-form input:-moz-placeholder {
 	color: #000000;
@@ -1036,20 +1089,11 @@ input[type="checkbox"].visually-hidden {
 	cursor: pointer;
 }
 
-.range-toggle:hover {
-	top: -10px;
-
-	width: 22px;
-	height: 22px;
-
-	border: 9px solid #ffffff;
-}
-
 .range-toggle-min {
 	left: 0px;
 }
 .range-toggle-min:hover {
-	left: -1px;
+	transform: scale(1.1);
 }
 
 .range-toggle-max {
@@ -1057,7 +1101,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .range-toggle-max:hover {
-	left: 80%;
+	transform: scale(1.1);
 }
 /* =========================================== */
 
