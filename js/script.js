@@ -12,9 +12,6 @@ var adultPlus = popup.querySelector(".button-plus.adult-button");
 var childMenus = popup.querySelector(".button-menus.child-button");
 var childPlus = popup.querySelector(".button-plus.child-button");
 
-console.log(childPlus);
-
-//если JS работает, прячем окно
 if (!popup.classList.contains("modal-hide") || !popup.classList.contains("modal-open")) {
 		popup.classList.add("modal-hide");
 		arrivalDate.required = false;
@@ -23,7 +20,6 @@ if (!popup.classList.contains("modal-hide") || !popup.classList.contains("modal-
 		childCount.required = false;
 } 
 
-//открытие и закрытие
 link.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	if (popup.classList.contains("modal-hide")) {
@@ -36,7 +32,6 @@ link.addEventListener("click", function(evt) {
 	popup.classList.remove("modal-error");
 });
 
-//тряска, если поля пустые форма не отправляется.
 form.addEventListener("submit", function(evt) {
 	if (!arrivalDate.value || !leavingDate.value || !adultCount.value || !childCount.value) {
 		evt.preventDefault();
@@ -54,13 +49,10 @@ form.addEventListener("submit", function(evt) {
 		}
 	} else {
     	localStorage.setItem("adultCount", adultCount.value);
-    	console.log(adultCount.value);
     	localStorage.setItem("childCount", childCount.value);
-    	console.log(childCount.value);
     }
 });
 
-//оживление плюса и минуса
 adultMenus.addEventListener("click", function(evt) {
 	if (!adultCount.value) {
 		adultCount.value = 0;
