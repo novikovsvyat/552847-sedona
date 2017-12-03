@@ -86,6 +86,3 @@ childPlus.addEventListener("click", function(evt) {
 		childCount.value = parseInt(childCount.value) + 1;
 	}
 });
-
-
-
