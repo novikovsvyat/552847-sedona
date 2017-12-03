@@ -1160,7 +1160,7 @@ input[type="checkbox"].visually-hidden {
 
 .filter-info-container {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	min-height: 86px;
 	padding-top: 30px;
 	padding-bottom: 28px;
@@ -1169,7 +1169,7 @@ input[type="checkbox"].visually-hidden {
 .filter-result-count {
 	min-width: 135px; 
 	margin: 0;
-	margin-top: 1px;
+	margin-right: 30px;
 
 	font-size: 21px;
 }
@@ -1178,16 +1178,13 @@ input[type="checkbox"].visually-hidden {
 	min-height: 26px;
 	min-width: 75px;
 	margin: 0;
-	margin-left: 30px;
-	margin-top: 2px;
-	padding-top: 4px;
+	margin-right: 39px;
 }
 
 .filter-result-sorting,
 .sorting-type-list a {
 	font-size: 12px;
 	font-weight: 400;
-	line-height: 18px;
 }
 
 .sorting-type-list {
@@ -1195,16 +1192,17 @@ input[type="checkbox"].visually-hidden {
 	flex-wrap: wrap;
 	width: 100%;
 	margin: 0;
-	margin-left: 39px;
-	margin-top: 2px;
 	padding: 0;
-	
 
 	list-style: none;
 }
 
 .sorting-type-list li {
 	margin-right: 33px;
+}
+
+.sorting-type-list li:last-child {
+	margin-right: 0;
 }
 
 .sorting-type-list a {
@@ -1238,7 +1236,6 @@ input[type="checkbox"].visually-hidden {
 	align-items: center;
 	min-width: 110px;
 	margin: 0;
-	margin-top: 8px;
 	padding: 0;
 
 	list-style: none;
@@ -1246,6 +1243,10 @@ input[type="checkbox"].visually-hidden {
 
 .sorting-direction-list li {
 	margin-left: 12px;
+}
+
+.sorting-direction-list li:first-child {
+	margin-left: 0;
 }
 
 .sorting-direction-up,
@@ -1338,14 +1339,15 @@ input[type="checkbox"].visually-hidden {
 	width: 100%;
 }
 
-.hotel-description-container h3,
 .hotel-type,
 .hotel-price {
 	margin: 0;
+	margin-bottom: 14px;
 }
 
 .hotel-description-container h3 {
 	margin-top:-4px;
+	margin-bottom: 5px;
 }
 
 .hotel-description-container a.filter-item-title {
@@ -1367,7 +1369,10 @@ input[type="checkbox"].visually-hidden {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding-top: 5px;
+}
+
+.details-descriptions-container div:last-child {
+	margin-right: 0;
 }
 
 .detail-description-container {
@@ -1386,7 +1391,6 @@ input[type="checkbox"].visually-hidden {
 .more-info-button,
 .reservation-button {
 	display: block;
-	margin-top: 14px;
 	padding: 3px 17px;
 
 	line-height: 21px;
@@ -1436,6 +1440,7 @@ input[type="checkbox"].visually-hidden {
 	width: 100px;
 	height: 20px;
 	margin-left: auto;
+	margin-bottom: 43px;
 
 	text-align: right;
 
@@ -1462,9 +1467,7 @@ input[type="checkbox"].visually-hidden {
 /* =========================================== */
 
 .hotel-rating {
-	margin-top: 43px;
-	padding: 3px 4px 3px;
-	padding-left: 6px;
+	padding: 3px 8px;
 
 	color: #666666;
 	text-align: center;
