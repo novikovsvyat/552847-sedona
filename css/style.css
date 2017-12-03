@@ -299,7 +299,7 @@ input[type="checkbox"].visually-hidden {
 	text-align: center;
 	line-height: 0;
 
-	background-color: #737f88;
+	background-color: #6e8595;
 	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -430,6 +430,7 @@ input[type="checkbox"].visually-hidden {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 54%;
+	background-color: #9d6a4e;
 }
 
 .fiwi-left::after {
@@ -914,7 +915,7 @@ input[type="checkbox"].visually-hidden {
 	padding-top: 28px;
 	padding-bottom: 28px;
 	
-	background-color: #737f88;
+	background-color: #6e8595;
 	background-image: url("../img/background-blur.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
