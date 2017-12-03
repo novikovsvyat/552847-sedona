@@ -13,11 +13,11 @@ var childMenus = popup.querySelector(".button-menus.child-button");
 var childPlus = popup.querySelector(".button-plus.child-button");
 
 if (!popup.classList.contains("modal-hide") || !popup.classList.contains("modal-open")) {
-		popup.classList.add("modal-hide");
-		arrivalDate.required = false;
-		leavingDate.required = false;
-		adultCount.required = false;
-		childCount.required = false;
+	popup.classList.add("modal-hide");
+	arrivalDate.required = false;
+	leavingDate.required = false;
+	adultCount.required = false;
+	childCount.required = false;
 } 
 
 link.addEventListener("click", function(evt) {
@@ -48,9 +48,9 @@ form.addEventListener("submit", function(evt) {
 			childCount.focus();
 		}
 	} else {
-    	localStorage.setItem("adultCount", adultCount.value);
-    	localStorage.setItem("childCount", childCount.value);
-    }
+		localStorage.setItem("adultCount", adultCount.value);
+		localStorage.setItem("childCount", childCount.value);
+	}
 });
 
 adultMenus.addEventListener("click", function(evt) {
