@@ -244,15 +244,15 @@ input[type="checkbox"].visually-hidden {
 	opacity: 0.3;
 }
 
-.footer-social-item:nth-child(1) .social-button {
+.twitter .social-button {
 	background-image: url(../img/twitter.svg);
 }
 
-.footer-social-item:nth-child(2) .social-button {
+.facebook .social-button {
 	background-image: url(../img/fb-icon.svg);
 }
 
-.footer-social-item:nth-child(3) .social-button {
+.youtube .social-button {
 	background-image: url(../img/youtube.svg);
 }
 
@@ -388,8 +388,7 @@ input[type="checkbox"].visually-hidden {
 	width: 33.33%;
 	max-width: 400px;
 	min-height: 256px;
-	padding-top: 48px;
-	padding-bottom: 30px;
+	padding: 48px 5% 30px;
 
 	background-color: #eeeeee;
 }
@@ -404,26 +403,23 @@ input[type="checkbox"].visually-hidden {
 	display: block;
 	width: 33.34%;
 	max-width: 400px;
-	padding-top: 48px;
-	padding-bottom: 30px;
-	padding-left: 4%;
-	padding-right: 4%;
+	padding: 48px 4% 30px;
 
 	color: #ffffff;
 
 	background-color: #81b3d2;
 }
 
-.feature-item-with-image:nth-child(1) {
+.fiwi-left {
 	order: 1;
 }
 
-.feature-item-with-image:nth-child(2) {
+.fiwi-right {
 	order: 3;
 }
 
-.feature-item-with-image:nth-child(1)::after,
-.feature-item-with-image:nth-child(2)::before {
+.fiwi-left::after,
+.fiwi-right::before {
 	content: "";
 
 	position: relative;
@@ -437,11 +433,11 @@ input[type="checkbox"].visually-hidden {
 	background-position: 50% 54%;
 }
 
-.feature-item-with-image:nth-child(1)::after {
+.fiwi-left::after {
 	background-image: url(../img/features-1.jpg);
 }
 
-.feature-item-with-image:nth-child(2)::before {
+.fiwi-right::before {
 	background-image: url(../img/features-2.jpg);
 }
 
@@ -450,6 +446,7 @@ input[type="checkbox"].visually-hidden {
 .more-features-item h3 {
 	width: 200px;
 	margin: 0 auto;
+	margin-bottom: 23px;
 
 	font-size: 21px;
 	line-height: 21px;
@@ -462,20 +459,17 @@ input[type="checkbox"].visually-hidden {
 .feature-item p,
 .feature-item-with-image p,
 .more-features-item p {
-	margin-top: 22px;
-	margin-bottom: 0px;
+	margin: 0;
+	margin-bottom: 21px;
 
 	font-weight: 400;
 	line-height: 21px;
 }
 
-.feature-item p {
-	margin-left: 15%;
-	margin-right: 15%;
-}
-
-.more-features-item p {
-	margin-top: 23px;
+.feature-item p:last-child,
+.for-pseudo-feature p:last-child,
+.more-features-item p:last-child {
+	margin-bottom: 0;
 }
 
 .more-features {
@@ -491,9 +485,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 56px 4%;
 }
 
-.more-features-item:nth-child(1)::before,
-.more-features-item:nth-child(2)::before,
-.more-features-item:nth-child(3)::before {
+.more-features-item:nth-child(n)::before {
 	content: "";
 
 	position: relative;
@@ -507,15 +499,15 @@ input[type="checkbox"].visually-hidden {
 	background-position: 50% 100%;
 }
 
-.more-features-item:nth-child(1)::before {
+.housing::before {
 	background-image: url("../img/icon-1.svg");
 }
 
-.more-features-item:nth-child(2)::before {
+.food::before {
 	background-image: url("../img/icon-3.svg");
 }
 
-.more-features-item:nth-child(3)::before {
+.souvenirs::before {
 	background-image: url("../img/icon-2.svg");
 }
 
@@ -892,6 +884,8 @@ input[type="checkbox"].visually-hidden {
 /* Карта ------------------------------------- */
 
 .map {
+	position: relative;
+
 	height: 593px;
 	width: 100%;
 
@@ -1039,7 +1033,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 0;
 
 	border: 2px solid #ffffff;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .filter-price-container::after {
@@ -1139,7 +1133,7 @@ input[type="checkbox"].visually-hidden {
 	background-color: transparent;
 
 	border: 2px solid #ffffff;
-	border-radius: 2px;
+	border-radius: 3px;
 
 	cursor: pointer;
 }
