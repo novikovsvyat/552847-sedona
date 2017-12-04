@@ -295,7 +295,7 @@ input[type="checkbox"].visually-hidden {
 
 .features {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	padding-top: 61px;
 	background-color: #ffffff;
 }
@@ -323,14 +323,14 @@ input[type="checkbox"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
 
 .features-list {
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
 	background-color: #eeeeee;
 }
 
@@ -404,7 +404,7 @@ input[type="checkbox"].visually-hidden {
 .feature-item h3,
 .feature-item-with-image h3,
 .more-features-item h3 {
-	width: 200px;
+	max-width: 200px;
 	margin: 0 auto;
 	margin-bottom: 23px;
 	font-size: 21px;
@@ -469,7 +469,7 @@ input[type="checkbox"].visually-hidden {
 
 .offers {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	padding-top: 52px;
 	text-align: center;
 	background-color: #ffffff;
@@ -590,6 +590,7 @@ input[type="checkbox"].visually-hidden {
 
 .modal-hotel-search {
 	position: absolute;
+	z-index: 1;
 	right: 0;
 	left: 0;
 	width: 568px;
@@ -849,7 +850,7 @@ input[type="checkbox"].visually-hidden {
 
 .map {
 	position: relative;
-	height: 593px;
+	min-height: 593px;
 	width: 100%;
 	background-color: #ccdaaa;
 	background-image: url("../img/map.jpg");
@@ -1014,9 +1015,6 @@ input[type="checkbox"].visually-hidden {
 	background-color: transparent;
 	border: none;
 }
-
-
-/* Слайдер */
 
 .range-controls {
 	position: relative;
@@ -1281,6 +1279,7 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-description-container {
 	width: 100%;
+	margin-right: 30px;
 }
 
 .hotel-type,
@@ -1326,6 +1325,16 @@ input[type="checkbox"].visually-hidden {
 }
 
 .detail-description-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	min-width: 110px;
 	margin-right: 6px;
 }
